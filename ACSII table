@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ACSIITable
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.OutputEncoding = Encoding.ASCII;
+
+            char c;
+            for (int i = 0; i <= 126; i++)
+            {
+                c = (char)i;
+                if (char.IsSymbol(c) || char.IsLetter(c) || char.IsNumber(c) || char.IsPunctuation(c))
+                {
+                    Console.WriteLine("{0} -> {1}", i, c);
+                }
+            }
+        }
+    }
+}
