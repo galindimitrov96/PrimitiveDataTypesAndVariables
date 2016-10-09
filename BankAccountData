@@ -1,0 +1,20 @@
+            string fName;
+            string mName;
+            string lName;
+            decimal balance;
+            string bankName;
+            string IBAN;
+            long creditCard1;
+            long creditCard2;
+            long creditCard3;
+
+            fName = "Galin";
+            mName = "Jelqzokov";
+            lName = "Dimitrov";
+            balance = 5.6M;
+            bankName = "DSk Direct";
+            IBAN = "BG85STSA12345678912345";
+            creditCard1 = 8246661589722313;
+            creditCard2 = 8247562337820411;
+            creditCard3 = 3475241119637451;
+            Console.WriteLine("{0} {1} {2}\n{3}\n{4}\n{5}\n{6}\n{7}\n{8}", fName, mName, lName, balance, bankName, IBAN, creditCard1, creditCard2, creditCard3);
