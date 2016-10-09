@@ -1,3 +1,15 @@
+  using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BankAccountData
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
             string fName;
             string mName;
             string lName;
@@ -18,3 +30,7 @@
             creditCard2 = 8247562337820411;
             creditCard3 = 3475241119637451;
             Console.WriteLine("{0} {1} {2}\n{3}\n{4}\n{5}\n{6}\n{7}\n{8}", fName, mName, lName, balance, bankName, IBAN, creditCard1, creditCard2, creditCard3);
+
+        }
+    }
+}
