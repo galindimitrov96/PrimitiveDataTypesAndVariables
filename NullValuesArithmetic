@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace NullValuesArithmetic
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int? a = null;
+            double? b = null;
+            Console.WriteLine("{0};{1}", a, b);
+            a = a + null;
+            b = b + null;
+            Console.WriteLine("{0};{1}", a, b);
+            a = a + 100;
+            b = b + 100.5;
+            Console.WriteLine("{0};{1}", a, b);
+            a = a + 100;
+            b = b + 100.5;
+            Console.WriteLine("{0};{1}", a.GetValueOrDefault(), b.GetValueOrDefault());
+        }
+    }
+}
