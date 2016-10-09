@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EmployeeData
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string fName = "Galin";
+            string lName = "Dimitrov";
+            byte age = 20;
+            string Gender = "male";
+            long PersonalIDnumber = 8306112507;
+            int UniqueEmployeeNumber = 27566821;
+            Console.WriteLine("First Name: {0} \n Last Name: {1} \n age: {2} \n Gender: {3} \n Personal ID Number {4} \n Unique Employee Number: {5}", fName, lName,age,Gender,PersonalIDnumber, UniqueEmployeeNumber);
+
+        }
+    }
+}
