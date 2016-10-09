@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ComparingFloats
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter first floting point number a:");
+            string temp = Console.ReadLine();
+            double aa = double.Parse(temp, CultureInfo.InvariantCulture);
+            Console.WriteLine("Enter second floting point number b:");
+            string temp2 = Console.ReadLine();
+            double b = double.Parse(temp2, CultureInfo.InvariantCulture);
+            float eps = 0.000001f;
+            bool isEqual = (Math.Abs(aa - b) < eps);
+            Console.WriteLine("\"The numbers are equal\", that is {0}.", isEqual);
+        }
+    }
+}
