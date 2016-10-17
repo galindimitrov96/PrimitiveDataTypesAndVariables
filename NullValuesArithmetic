@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NullValuesArithmetic
+namespace ConsoleApplication23
 {
     class Program
     {
@@ -12,16 +12,16 @@ namespace NullValuesArithmetic
         {
             int? a = null;
             double? b = null;
-            Console.WriteLine("{0};{1}", a, b);
-            a = a + null;
-            b = b + null;
-            Console.WriteLine("{0};{1}", a, b);
-            a = a + 100;
-            b = b + 100.5;
-            Console.WriteLine("{0};{1}", a, b);
-            a = a + 100;
-            b = b + 100.5;
-            Console.WriteLine("{0};{1}", a.GetValueOrDefault(), b.GetValueOrDefault());
+            Console.WriteLine(a);
+            Console.WriteLine(b);          
+            a = a + 19;
+            b = b + 4.5;
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+            a = 20;
+            b = 12.5;
+            Console.WriteLine(a);
+            Console.WriteLine(b);
         }
     }
 }
